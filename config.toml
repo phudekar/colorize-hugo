@@ -1,0 +1,125 @@
+############################ Default configuration #########################
+languageCode = "en-us"
+# site title 
+title = "Colorize Studios"
+# theme
+theme = ["northendlab-light"]
+# post pagination
+paginate = "5"
+# post excerpt
+summaryLength = "10"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+
+[outputs]
+home = ["HTML", "AMP", "RSS", "JSON"]
+
+########################## Plugings ######################################
+
+# css plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+link = "css/main.css"
+
+# js plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+
+
+########################### Navigation ###################################
+
+# main menu
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 1
+
+# main menu
+[[menu.main]]
+URL = "portfolio"
+name = "Portfolio"
+weight = 2
+
+# main menu
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 3
+
+# footer menu
+[[menu.footer]]
+URL = "portfolio"
+name = "Portfolio"
+weight = 1
+
+[[menu.footer]]
+URL = "contact"
+name = "Contact"
+weight = 2
+
+
+######################### Default Parameters ###########################
+[params]
+# home
+home = "Home"
+# logo
+logo = "images/logo_small.svg"
+# meta data
+author = "Pradip Hudekar"
+description = "This is meta description"
+# google tag manager
+google_tag_manager = "" # your id
+# contact form action
+contact_form_action = "#" # contact form works with : https://formspree.io
+# copyright
+copyright = "&copy; 2020 [Colorize Studios](https://colorize-studios.com) All Rights Reserved"
+
+# preloader
+[params.preloader]
+enable = true
+preloader = "" # use png, jpg, svg or gif format
+
+# search
+[params.search]
+enable = false
+
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
+
+####################### banner #######################################
+[params.banner]
+bgImage = "images/banner/banner-bg.svg"
+title = "\"The best thing about a picture is that it never changes, even when the people in it do.\""
+subtitle = "-- Andy Warhol"
+image = "images/banner/saavi-banner.jpg"
+
+
+######################## call to action ###############################
+[params.cta]
+enable = true
+image = "images/capture.jpg"
+title = "Let's capture those flying moments"
+description = "Time does not wait for eternity but we can help you store these memories forever in our photos."
+[params.cta.button]
+enable = true
+label = "Book you appoitment"
+link = "/contact"
+
+
+############################## Social Site ##########################
+[[params.social]]
+icon = "ti-facebook" # themify icon pack https://themify.me/themify-icons
+link = "https://www.facebook.com/colorizestudios/"

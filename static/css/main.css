@@ -1,0 +1,11 @@
+.banner .container {
+  min-height: 400px;
+}
+
+img.cta {
+  width: 100%;
+}
+
+.banner .illustration {
+  height:85%;
+}
