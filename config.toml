@@ -1,62 +1,36 @@
-disqusShortname = ""
 languageCode = "en-us"
 paginate = "5"
 summaryLength = "10"
+
 theme = ["northendlab-light"]
+
 title = "Colorize Studios"
+
 [[menu.footer]]
 URL = "portfolio"
 name = "Portfolio"
 weight = 1
+
 [[menu.footer]]
 URL = "contact"
 name = "Contact"
 weight = 2
-[[menu.main]]
-URL = "about"
-name = "About"
-weight = 1
-[[menu.main]]
-URL = "portfolio"
-name = "Portfolio"
-weight = 2
-[[menu.main]]
-URL = "contact"
-name = "Contact"
-weight = 3
+
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]
-[params]
-author = "Pradip Hudekar"
-contact_form_action = "#"
-copyright = "&copy; 2020 [Colorize Studios](https://colorize-studios.com) All Rights Reserved"
-description = "This is meta description"
-google_tag_manager = ""
-home = "Home"
-logo = "images/logo_small.svg"
-[params.banner]
-bgImage = "images/banner/banner-bg.svg"
-image = "https://colorize-web.s3.ap-south-1.amazonaws.com/assets/yo.png"
-subtitle = "-- Andy Warhol"
-title = "\"The best thing about a picture is that it never changes, even when the people in it do.\""
-[params.cookies]
-enable = true
-expire_days = 2
-[params.cta]
-description = "Time does not wait for eternity but we can help you store these memories forever in our photos."
-enable = true
-image = "images/capture.jpg"
-title = "Let's capture those flying moments"
-[params.cta.button]
-enable = true
-label = "Book you appoitment"
-link = "/contact"
+
+########################## Plugings ######################################
+
+# css plugins
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/themify-icons/themify-icons.css"
-[[params.plugins.css]]
-link = "css/main.css"
+
+# js plugins
 [[params.plugins.js]]
 link = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
@@ -67,11 +41,65 @@ link = "plugins/search/fuse.min.js"
 link = "plugins/search/mark.js"
 [[params.plugins.js]]
 link = "plugins/search/search.js"
+
+
+########################### Navigation ###################################
+
+# main menu
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 1
+
+[[menu.main]]
+URL = "gallery"
+name = "Gallery"
+weight = 2
+
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 3
+
+[params]
+author = "Pradip Hudekar"
+contact_form_action = "#"
+copyright = "&copy; 2020 [Colorize Studios](https://colorize-studios.com) All Rights Reserved"
+description = "This is meta description"
+google_tag_manager = ""
+home = "Home"
+logo = "images/logo_small.svg"
+
+[params.banner]
+bgImage = "images/banner/banner-bg.svg"
+image = "https://colorize-web.s3.ap-south-1.amazonaws.com/assets/yo.png"
+title = "\"The best thing about a picture is that it never changes, even when the people in it do.\""
+subtitle = "-- Andy Warhol"
+
+[params.cookies]
+enable = true
+expire_days = 2
+
+
+######################## call to action ###############################
+[params.cta]
+description = "Time does not wait for eternity but we can help you store these memories forever in our photos."
+enable = true
+image = "images/capture.jpg"
+title = "Let's capture those flying moments"
+
+[params.cta.button]
+enable = true
+label = "Book you appoitment"
+link = "/contact"
+
 [params.preloader]
 enable = true
 preloader = ""
+
 [params.search]
 enable = false
+
 [[params.social]]
 icon = "ti-facebook"
 link = "https://www.facebook.com/colorizestudios/"
