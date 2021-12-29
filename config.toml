@@ -36,7 +36,7 @@ home = "Home"
 logo = "images/logo_small.svg"
 [params.banner]
 bgImage = "images/banner/banner-bg.svg"
-image = "https://colorize-web.s3.ap-south-1.amazonaws.com/assets/portraits/IMG_1989.jpg"
+image = "https://colorize-web.s3.ap-south-1.amazonaws.com/assets/yo.png"
 subtitle = "-- Andy Warhol"
 title = "\"The best thing about a picture is that it never changes, even when the people in it do.\""
 [params.cookies]
