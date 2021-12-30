@@ -36,7 +36,7 @@ sections:
   create: all
   match: "*"
 upload_dir: assets
-public_path: https://colorize-web.s3.ap-south-1.amazonaws.com
+public_path: https://colorize-web.s3.ap-south-1.amazonaws.com/assets
 front_matter_path: "/assets"
 use_front_matter_path: true
 file_template: ":filename:"
