@@ -1,25 +1,42 @@
 {{ define "main" }}
 
+<script type="text/javascript">
+const images = [];
+{{ range .Params.Images }} 
+images.push("{{ . }}");
+{{ end }}
+
+var timer;
+var currentIndex = 0;
+
+const rotateImage = () => {
+  const currentImage = images[currentIndex];
+  currentIndex++;
+  if(currentIndex >= images.length){
+    currentIndex = 0;
+  }
+  // console.log(currentIndex, currentImage);
+  const featuredImage = document.getElementById("featured-image");
+  featuredImage.style.opacity = 0;
+  setTimeout(()=>{
+    featuredImage.setAttribute("src",currentImage)
+    featuredImage.style.opacity = 1
+  }, 2000);
+}
+
+window.onload = () => {
+  rotateImage();
+  timer = setInterval(rotateImage, 10000);
+};
+</script>
+
 <section class="gallery section">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 mx-auto block shadow mb-5">
-        {{ if .Params.Image }}
-        <img src="{{ .Params.Image | relURL }}" class="img-fluid w-100 mb-4" alt="{{ .Title | markdownify }}">
+    <div class="row pb-5">
+      <div class="col-lg-8 mx-auto block shadow mb-5">
+        {{ if .Params.Images }}
+        <img id="featured-image" src="{{ . | relURL }}" class="img-fluid w-100 mb-4" alt="{{ . | markdownify }}">
         {{ end }}
-        <div class="content mb-5">
-            {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-            {{ range $paginator.Pages }}
-            {{ .Render "article" }}
-            {{ end }}
-            <!-- pagination -->
-            <div class="mt-5">
-              {{ template "_internal/pagination.html" . }}
-            </div>
-        </div>
-        <div class="mb-3 post-meta">
-          {{range .Params.Tags }} <a href="{{ `tags/` | relLangURL}}{{ . | urlize | lower }}">#{{ . | title }}</a>,  {{ end }}
-        </div>
       </div>
     </div>
   </div>

@@ -19,14 +19,32 @@ img.cta {
 }
 
 section.banner {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 section.gallery {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-    .content {
-        min-height: 60vh;
+  .container {
+    height: 90vh;
+  }
+
+  .row {
+    height: 100%;
+
+    .block {
+      height: 100%;
+      padding: 40px;
     }
+  }
+}
+
+.gallery {
+  #featured-image {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    object-fit: contain;
+    height: 100%;
+  }
 }

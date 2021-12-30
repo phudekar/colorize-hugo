@@ -2,7 +2,7 @@
 title: "Contact Us"
 draft: false
 description : "this is meta description"
-image: "https://colorize-web.s3.ap-south-1.amazonaws.com/assets/hug_2.png"
+image: "https://colorize-web.s3.ap-south-1.amazonaws.com/assets/hug.png"
 layout : contact
 ---
 
