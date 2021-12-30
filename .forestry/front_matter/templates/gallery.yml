@@ -12,3 +12,5 @@ fields:
   type: image_gallery
   config: {}
   label: images
+pages:
+- content/gallery/_index.md
