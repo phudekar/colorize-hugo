@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: content/gallery/_index.md
+  label: Gallery
+  match: "**/*"
+- type: document
   path: config.toml
   label: Config
 - type: directory
