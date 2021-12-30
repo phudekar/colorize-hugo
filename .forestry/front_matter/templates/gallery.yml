@@ -8,9 +8,7 @@ fields:
 - type: text
   name: description
   label: description
-- type: text
-  name: layout
-  label: layout
-- type: image_gallery
-  name: images
+- name: images
+  type: image_gallery
+  config: {}
   label: images
