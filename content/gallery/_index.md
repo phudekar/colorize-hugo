@@ -9,4 +9,3 @@ images:
 - https://s3.ap-south-1.amazonaws.com/colorize-web/assets/kids/IMG_6229.jpg
 
 ---
-![](https://colorize-web.s3.ap-south-1.amazonaws.com/IMG_5384.jpg)
