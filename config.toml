@@ -7,12 +7,12 @@ theme = ["northendlab-light"]
 title = "Colorize Studios"
 
 [[menu.footer]]
-URL = "portfolio"
+URL = "/portfolio"
 name = "Portfolio"
 weight = 1
 
 [[menu.footer]]
-URL = "contact"
+URL = "/contact"
 name = "Contact"
 weight = 2
 
@@ -47,17 +47,17 @@ link = "/plugins/search/search.js"
 
 # main menu
 [[menu.main]]
-URL = "about"
+URL = "/about"
 name = "About"
 weight = 1
 
 [[menu.main]]
-URL = "gallery"
+URL = "/gallery"
 name = "Gallery"
 weight = 2
 
 [[menu.main]]
-URL = "contact"
+URL = "/contact"
 name = "Contact"
 weight = 3
 
@@ -85,7 +85,7 @@ expire_days = 2
 [params.cta]
 description = "Time does not wait for eternity but we can help you store these memories forever in our photos."
 enable = true
-image = "images/capture.jpg"
+image = "/images/capture.jpg"
 title = "Let's capture those flying moments"
 
 [params.cta.button]
