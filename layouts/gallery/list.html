@@ -35,7 +35,7 @@ window.onload = () => {
     <div class="row pb-5">
       <div class="col-lg-8 mx-auto block shadow mb-5">
         {{ if .Params.Images }}
-        <img id="featured-image" src="{{ . | relURL }}" class="img-fluid w-100 mb-4" alt="{{ . | markdownify }}">
+        <img id="featured-image" src="{{ . | absURL }}" class="img-fluid w-100 mb-4" alt="{{ . | markdownify }}">
         {{ end }}
       </div>
     </div>
