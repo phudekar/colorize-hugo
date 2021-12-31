@@ -26,21 +26,21 @@ home = ["HTML", "AMP", "RSS", "JSON"]
 
 # css plugins
 [[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
+link = "/plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
-link = "plugins/themify-icons/themify-icons.css"
+link = "/plugins/themify-icons/themify-icons.css"
 
 # js plugins
 [[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
+link = "/plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
+link = "/plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
-link = "plugins/search/fuse.min.js"
+link = "/plugins/search/fuse.min.js"
 [[params.plugins.js]]
-link = "plugins/search/mark.js"
+link = "/plugins/search/mark.js"
 [[params.plugins.js]]
-link = "plugins/search/search.js"
+link = "/plugins/search/search.js"
 
 
 ########################### Navigation ###################################
