@@ -68,6 +68,7 @@ copyright = "&copy; 2020 [Colorize Studios](https://colorize-studios.com) All Ri
 description = "This is meta description"
 google_tag_manager = ""
 home = "Home"
+baseUrl = "/"
 logo = "images/logo_small.svg"
 
 [params.banner]
