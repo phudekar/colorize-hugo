@@ -6,6 +6,8 @@ theme = ["northendlab-light"]
 
 title = "Colorize Studios"
 
+googleAnalytics = "UA-112057579-1"
+
 [[menu.footer]]
 URL = "/portfolio"
 name = "Portfolio"
