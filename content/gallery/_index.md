@@ -2,6 +2,7 @@
 title: Gallery
 description: gallery
 layout: gallery
+defaultImage: /images/saavi.jpg
 images:
 - https://s3.ap-south-1.amazonaws.com/colorize-web/assets/kids/IMG_3279.jpg
 - https://colorize-web.s3.ap-south-1.amazonaws.com/assets/197418919_1208065746290144_235660678675609477_n.jpg
