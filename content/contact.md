@@ -1,7 +1,7 @@
 ---
 title: Contact Us
 description: this is meta description
-image: https://colorize-web.s3.ap-south-1.amazonaws.com/assets/saavi-banner.jpg
+image: images/saavi.jpg
 layout: contact
 
 ---
