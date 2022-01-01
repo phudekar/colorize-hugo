@@ -9,8 +9,8 @@ title = "Colorize Studios"
 googleAnalytics = "UA-112057579-1"
 
 [[menu.footer]]
-URL = "/portfolio"
-name = "Portfolio"
+URL = "/gallery"
+name = "Gallery"
 weight = 1
 
 [[menu.footer]]
